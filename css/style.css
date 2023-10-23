@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #011629;
+  --second: #2ab1ff;
+}
+
+/* S T A R T - N A V B A R */
+
+nav {
+  background-color: var(--main);
+}
+
+nav img {
+  max-width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+}
+nav ul li a:hover {
+  color: var(--second);
+}
+
+.active {
+  color: var(--second);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+  box-shadow: none !important;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  box-shadow: none;
+  border-color: var(--second);
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] svg {
+  color: var(--second);
+}
+
+.btn {
+  background-color: var(--second);
+  color: white;
+}
+
+/* E N D - N A V B A R */
+
+/* S T A R T - H O M E */
+
+.home {
+  background-color: var(--main);
+  height: calc(100vh - 73px);
+}
+
+.home h1 {
+  font-size: 50px;
+  color: var(--second);
+}
+
+.home a {
+  color: white;
+  background-color: var(--second);
+  font-weight: 500;
+  transition: 0.8s;
+}
+
+.home a:hover {
+  color: var(--second);
+  background-color: white;
+}
+
+/* E N D - H O M E */
+
+/* S T A R T - S T O R Y */
+
+.img-width {
+  max-width: 80px;
+}
+
+.main-title:after {
+  content: "";
+  height: 2px;
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  background-color: var(--second);
+  transform: translateX(-50%);
+}
+
+.story span {
+  color: var(--second);
+}
+
+/* E N D - S T O R Y */
+
+/* S T A R T - C R E W */
+.crew {
+  background-color: #eee;
+}
+
+.crew .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.crew .box::before {
+  content: attr(data-name);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(0, 0, 0, 0.486);
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.crew .box:hover::before {
+  transform: translateX(0);
+}
+
+/* E N D - C R E W */
+
+/* S T A R T - E P I S O D E S */
+.episodes {
+  background-color: #eee;
+}
+
+.episodes .card {
+  cursor: pointer;
+}
+
+/* E N D - E P I S O D E S*/
+
+/* S T A R T - F O O T E R */
+.footer {
+  background-color: var(--main);
+}
+
+.footer h5 {
+  margin: 0px !important;
+  padding: 10px 0px;
+}
+.footer span {
+  color: var(--second);
+}
+
+/* E N D - F O O T E R */
