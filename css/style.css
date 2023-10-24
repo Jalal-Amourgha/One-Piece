@@ -99,9 +99,6 @@ nav ul li a:hover {
   transform: translateX(-50%);
 }
 
-.story .row img {
-  height: 85vh;
-}
 .story span {
   color: var(--second);
 }
@@ -157,7 +154,7 @@ nav ul li a:hover {
 
 .zoomed {
   z-index: 1;
-  transform: scale(5);
+  transform: scale(10);
 }
 
 /* E N D - M A P */
