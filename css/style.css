@@ -7,6 +7,7 @@
 :root {
   --main: #011629;
   --second: #2ab1ff;
+  --gray: #eee;
 }
 
 /* S T A R T - N A V B A R */
@@ -98,6 +99,9 @@ nav ul li a:hover {
   transform: translateX(-50%);
 }
 
+.story .row img {
+  height: 85vh;
+}
 .story span {
   color: var(--second);
 }
@@ -105,8 +109,9 @@ nav ul li a:hover {
 /* E N D - S T O R Y */
 
 /* S T A R T - C R E W */
+
 .crew {
-  background-color: #eee;
+  background-color: var(--gray);
 }
 
 .crew .box {
@@ -137,9 +142,30 @@ nav ul li a:hover {
 
 /* E N D - C R E W */
 
+/* S T A R T - M A P */
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.zoom-container img {
+  transition: transform 0.3s ease;
+  transform-origin: 0 0;
+}
+
+.zoomed {
+  z-index: 1;
+  transform: scale(5);
+}
+
+/* E N D - M A P */
+
 /* S T A R T - E P I S O D E S */
+
 .episodes {
-  background-color: #eee;
+  background-color: var(--gray);
 }
 
 .episodes .card {
@@ -148,12 +174,26 @@ nav ul li a:hover {
 
 /* E N D - E P I S O D E S*/
 
+/* S T A R T - R E V I E W S */
+
+.reviews .card {
+  background-color: var(--gray);
+  min-height: 100%;
+}
+
+.reviews .card svg {
+  color: var(--second);
+}
+
+/* E N D - R E V I E W  S */
+
 /* S T A R T - F O O T E R */
+
 .footer {
   background-color: var(--main);
 }
 
-.footer h5 {
+.footer h6 {
   margin: 0px !important;
   padding: 10px 0px;
 }
